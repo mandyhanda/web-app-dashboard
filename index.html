@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/css-toggle-switch@latest/dist/toggle-switch.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/tablet.css">
+  <link rel="stylesheet" href="css/desktop.css">
+  <link rel="stylesheet" href="css/autocomplete.css">
+  <link href="https://fonts.googleapis.com/css?family=Niramit:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+
+  <title>Web App Dashboard</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- main header bar at the top-->
+    <div class="header">
+      <span class="app-title">YourApp<sup>TM</sup></span>
+      <div class="dropdown">
+        <div class="bell-icon-container">
+          <!-- <img src="icons/icon-bell.svg" alt=""> -->
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+          <g id="_x36__6_">
+          	<g>
+          		<path stroke="#fff" class="st0" d="M24,18v-8c0-5.5-4.5-10-10-10S4,4.5,4,10v8l-4,8h9.1c0.5,2.3,2.5,4,4.9,4s4.4-1.7,4.9-4H28L24,18z"/>
+          	</g>
+          </g>
+          </svg>
+          <div class="dot"></div>
+        </div>
+        <div class="dropdown-content">
+          <div class="dropdown-notification-bar">
+            <span class="dropdown-message">Aenean lacinia</span>
+            <div class="dropdown-close">X</div>
+          </div>
+          <div class="dropdown-notification-bar">
+            <span class="dropdown-message">bibendum nulla</span>
+            <div class="dropdown-close">X</div>
+          </div>
+          <div class="dropdown-notification-bar">
+            <span class="dropdown-message">sed consectetur</span>
+            <div class="dropdown-close">X</div>
+          </div>
+          <div class="dropdown-notification-bar">
+            <span class="dropdown-message">Vestibulum id</span>
+            <div class="dropdown-close">X</div>
+          </div>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <img src="images/member-4.jpg" alt="">
+      <span class="user-name">Josh Sullivan</span>
+    </div>
+
+    <!-- header - search bar -->
+    <div class="header-search-bar">
+      <h1>Dashboard</h1>
+      <div class="input-field-container">
+        <span class="fas fa-search"></span>
+        <input type="text" placeholder="Search">
+      </div>
+    </div>
+
+    <!-- notification bar with close button -->
+    <div class="notification-bar-container">
+      <div class="notification-bar">
+        <span class="alert">Alert</span>
+        <span class="message">Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta felis euismod semper.</span>
+      </div>
+      <div class="close">X</div>
+    </div>
+    <!-- sidebar -->
+    <div class="sidebar">
+      <div class="icons">
+        <img src="icons/icon-dashboard.svg" alt="">
+        <img src="icons/icon-members.svg" alt="">
+        <img src="icons/icon-visits.svg" alt="">
+        <img src="icons/icon-settings.svg" alt="">
+      </div>
+    </div>
+
+    <!-- line chart container -->
+    <div class="line-chart-container">
+      <div class="line-chart-info">
+        <h1 class="section-title">Traffic</h1>
+        <div class="line-chart-buttons">
+          <div class="line-chart-btn">Hourly</div>
+          <div class="line-chart-btn line-chart-btn-highlighted">Daily</div>
+          <div class="line-chart-btn">Weekly</div>
+          <div class="line-chart-btn">Monthly</div>
+        </div>
+      </div>
+      <div class="line-chart">
+        <canvas></canvas>
+      </div>
+    </div>
+
+    <!-- bar chart container -->
+    <div class="bar-chart-container">
+      <div class="bar-chart-info">
+        <h1 class="section-title">Daily Traffic</h1>
+      </div>
+      <div class="bar-chart">
+        <canvas></canvas>
+      </div>
+    </div>
+
+    <!-- doughnut chart container -->
+    <div class="doughnut-chart-container">
+      <div class="doughnut-chart-info">
+        <h1 class="section-title">Mobile Users</h1>
+      </div>
+      <div class="doughnut-chart">
+        <canvas></canvas>
+      </div>
+    </div>
+
+    <!-- social stats -->
+    <div class="social-stats-container">
+      <h1 class="section-title">Social Stats</h1>
+      <div class="social-stats-wrapper">
+        <div class="social-stat">
+          <img src="icons/icon-twitter.svg" alt="Twitter icon">
+          <div class="social-stat-info">
+            <span class="social-stat-info-header">Twitter</span>
+            <span class="social-stat-info-number">10,345</span>
+          </div>
+        </div>
+
+        <div class="social-stat">
+          <img src="icons/icon-facebook.svg" alt="Facebook icon">
+          <div class="social-stat-info">
+            <span class="social-stat-info-header">Facebook</span>
+            <span class="social-stat-info-number">8,739</span>
+          </div>
+
+        </div>
+        <div class="social-stat">
+          <img src="icons/icon-google-plus.svg" alt="Google+ icon">
+          <div class="social-stat-info">
+            <span class="social-stat-info-header">Google+</span>
+            <span class="social-stat-info-number">2,530</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- new members -->
+    <div class="new-members-container">
+      <h1 class="section-title">New Members</h1>
+      <div class="new-member-item">
+        <img src="images/member-1.jpg" alt="member-1">
+        <div class="new-member-info">
+          <span>Victoria Chambers</span>
+          <span class="new-member-email">victoria.chambers80@example.com</span>
+        </div>
+        <span>10/15/15</span>
+      </div>
+      <div class="new-member-item">
+        <img src="images/member-2.jpg" alt="member-1">
+        <div class="new-member-info">
+          <span>Dale Byrd</span>
+          <span class="new-member-email">dale.byrd@example.com</span>
+        </div>
+        <span>10/15/15</span>
+      </div>
+      <div class="new-member-item">
+        <img src="images/member-3.jpg" alt="member-1">
+        <div class="new-member-info">
+          <span>Dawn Wood</span>
+          <span class="new-member-email">dawn.wood16@example.com</span>
+        </div>
+        <span>10/15/15</span>
+      </div>
+      <div class="new-member-item">
+        <img src="images/member-4.jpg" alt="member-1">
+        <div class="new-member-info">
+          <span>Dan Oliver</span>
+          <span class="new-member-email">dan.oliver82@example.com</span>
+        </div>
+        <span>10/15/15</span>
+      </div>
+    </div>
+
+    <!-- Recent Activity -->
+    <div class="activity-container">
+      <h1 class="section-title">Recent Activity</h1>
+      <div class="activity-item">
+        <img src="images/member-1.jpg" alt="member-1">
+        <div class="activity-info">
+          <span>Victoria Chambers commented on your YouTube's SEO tips</span>
+          <span>4 hours ago</span>
+        </div>
+        <img src="icons/right-arrow.svg" alt="">
+      </div>
+      <div class="activity-item">
+        <img src="images/member-2.jpg" alt="member-1">
+        <div class="activity-info">
+          <span>Dale Byrd like the post Facebook's Changes for 2016</span>
+          <span>5 hours ago</span>
+        </div>
+        <img src="icons/right-arrow.svg" alt="">
+      </div>
+      <div class="activity-item">
+        <img src="images/member-3.jpg" alt="member-1">
+        <div class="activity-info">
+          <span>Dawn Wood commented on Facebook's changes for 2016</span>
+          <span>5 hours ago</span>
+        </div>
+        <img src="icons/right-arrow.svg" alt="">
+      </div>
+      <div class="activity-item">
+        <img src="images/member-4.jpg" alt="member-1">
+        <div class="activity-info">
+          <span>Dan Oliver posted on YourApp's SEO tips</span>
+          <span>1 day ago</span>
+        </div>
+        <img src="icons/right-arrow.svg" alt="">
+      </div>
+    </div> <!-- end of recent activity -->
+
+    <!-- message user -->
+    <div class="message-user-container">
+      <h1 class="section-title">Message User</h1>
+      <div class="autocomplete">
+        <input id="message-user-item-input" class="message-user-item" type="text" placeholder="Search for User">
+      </div>
+      <textarea class="message-user-item" cols="30" rows="5" placeholder="Message for User"></textarea>
+      <button class="message-user-item send-button">SEND</button>
+    </div>
+
+    <!-- settings area -->
+    <div class="settings-container">
+      <h1 class="section-title">Settings</h1>
+      <div class="settings-section">
+        <span class="send-email-label">Send Email Notifications</span>
+        <label class="send-email-switch switch-light switch-ios" onclick="">
+          <input type="checkbox" id="send-email-notifications" name="send-email-notifications">
+          <span>
+            <span>OFF</span>
+            <span>ON</span>
+            <a></a>
+          </span>
+        </label>
+        <span class="send-profile-label">Send Profile to Public</span>
+        <label class="send-profile-switch switch-light switch-ios" onclick="">
+          <input type="checkbox" id="send-profile" name="send-profile">
+          <span>
+            <span>OFF</span>
+            <span>ON</span>
+            <a></a>
+          </span>
+        </label>
+
+
+        <select class="time-zone-dropdown">
+          <option timeZoneId="1" gmtAdjustment="GMT-12:00" useDaylightTime="0" value="-12">(GMT-12:00) International Date Line West </option>
+          <option timeZoneId="2" gmtAdjustment="GMT-11:00" useDaylightTime="0" value="-11">(GMT-11:00) Midway Island, Samoa</option>
+          <option timeZoneId="3" gmtAdjustment="GMT-10:00" useDaylightTime="0" value="-10">(GMT-10:00) Hawaii</option>
+          <option timeZoneId="4" gmtAdjustment="GMT-09:00" useDaylightTime="1" value="-9">(GMT-09:00) Alaska</option>
+          <option timeZoneId="5" gmtAdjustment="GMT-08:00" useDaylightTime="1" value="-8">(GMT-08:00) Pacific Time (US & Canada)</option>
+          <option timeZoneId="6" gmtAdjustment="GMT-08:00" useDaylightTime="1" value="-8">(GMT-08:00) Tijuana, Baja California</option>
+          <option timeZoneId="7" gmtAdjustment="GMT-07:00" useDaylightTime="0" value="-7">(GMT-07:00) Arizona</option>
+          <option timeZoneId="8" gmtAdjustment="GMT-07:00" useDaylightTime="1" value="-7">(GMT-07:00) Chihuahua, La Paz, Mazatlan</option>
+          <option timeZoneId="9" gmtAdjustment="GMT-07:00" useDaylightTime="1" value="-7">(GMT-07:00) Mountain Time (US & Canada)</option>
+          <option timeZoneId="10" gmtAdjustment="GMT-06:00" useDaylightTime="0" value="-6">(GMT-06:00) Central America</option>
+        </select>
+
+      </div>
+      <div class="save-cancel-buttons-container">
+        <button class="save-button">SAVE</button>
+        <button class="cancel-button">CANCEL</button>
+      </div>
+    </div>
+</div>
+    <!--end of wraper div -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
+    <script src="js/autocomplete.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
